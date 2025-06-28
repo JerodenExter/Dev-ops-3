@@ -1,0 +1,15 @@
+﻿id;name;type;is_active
+1;Snacks;diepvries;1
+2;Mini snacks;diepvries;1
+3;Sauzen;lang houdbaar;1
+4;Aziatische keuken;lang houdbaar;1
+5;Aardappel producten;diepvries;1
+6;Brood(produkten);diepvries;1
+7;Broodbeleg;lang houdbaar;1
+8;Diversen;kort houdbaar;1
+9;Dranken;lang houdbaar;1
+10;Vlees/Vis;diepvries;1
+11;Oven/Airfryer;diepvries;1
+12;Vegetarisch;diepvries;1
+13;Koek / Snoep / Chips / Gebak;kort houdbaar;1
+14;Koekjes per stuk verpakt;kort houdbaar;1
