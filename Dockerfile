@@ -27,6 +27,9 @@ RUN chown -R www-data:www-data /var/www/html
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
+# Zorg dat composer plugins mogen draaien als root
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
 # Install PHP deps
 RUN composer install --no-dev --optimize-autoloader --verbose
 
