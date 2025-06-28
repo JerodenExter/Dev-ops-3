@@ -27,11 +27,11 @@ RUN chown -R www-data:www-data /var/www/html
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# Copy .env and generate app key early
-RUN cp .env.example .env && php artisan key:generate
-
 # Install PHP deps
 RUN composer install --no-dev --optimize-autoloader --verbose
+
+# Copy .env and generate app key early
+RUN cp .env.example .env && php artisan key:generate
 
 # Install Node deps and build assets
 RUN npm install && npm run build
